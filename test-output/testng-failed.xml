@@ -6,7 +6,6 @@
       <class name="com.his.test.UserLoginTest">
         <methods>
           <include name="teardown"/>
-          <include name="userlogin"/>
           <include name="userlogOut"/>
           <include name="browserInit"/>
         </methods>

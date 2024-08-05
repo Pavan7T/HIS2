@@ -21,6 +21,7 @@ public class BasePage {
 
 	public void click(By element) throws InterruptedException {
 		WebElement Webelement = waitUtil.waitForElementToBeClickable(element);
+		Thread.sleep(2000);
 		Webelement.click();
 		Thread.sleep(2000);
 

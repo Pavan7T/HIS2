@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.his.utils.Constants;
 import com.his.utils.DriverFactory;
 
 public class BaseTest {
@@ -45,7 +46,7 @@ public class BaseTest {
 		}
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get(prop.getProperty("url"));
+		driver.get(Constants.url);
 
 	}
 

@@ -2,6 +2,8 @@ package com.his.test;
 
 import static org.testng.Assert.assertEquals;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 import com.his.pages.LoginPage;
 import com.his.pages.HomePage;
