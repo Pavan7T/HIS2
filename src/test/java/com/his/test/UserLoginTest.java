@@ -6,17 +6,14 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 import com.his.pages.LoginPage;
+import com.his.testComponents.BaseTest;
 import com.his.pages.HomePage;
 
 public class UserLoginTest extends BaseTest {
 
 	LoginPage LoginPage;
 	HomePage HomePage;
-
-	public UserLoginTest() {
-		super();
-	}
-
+	
 	@Test
 	public void userlogin() throws InterruptedException {
 		LoginPage = new LoginPage(driver);

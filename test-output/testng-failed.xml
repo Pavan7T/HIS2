@@ -5,9 +5,9 @@
     <classes>
       <class name="com.his.test.UserLoginTest">
         <methods>
-          <include name="teardown"/>
-          <include name="userlogOut"/>
+          <include name="userlogin"/>
           <include name="browserInit"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- com.his.test.UserLoginTest -->
     </classes>

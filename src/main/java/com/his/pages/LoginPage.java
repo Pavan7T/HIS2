@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.his.AbstractComponents.BasePage;
 import com.his.utils.Constants;
 import com.his.utils.WaitUtils;
 

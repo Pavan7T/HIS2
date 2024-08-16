@@ -17,7 +17,7 @@ public class Constants {
 		FileInputStream ip = null;
 		try {
 			ip = new FileInputStream(
-					System.getProperty("user.dir") + "/src/main/java/com/his/config/config.properties");
+					System.getProperty("user.dir") + "/src/main/java/com/his/resources/config.properties");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

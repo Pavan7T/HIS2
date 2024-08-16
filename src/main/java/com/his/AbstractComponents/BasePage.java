@@ -1,4 +1,4 @@
-package com.his.pages;
+package com.his.AbstractComponents;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
