@@ -11,7 +11,7 @@ import com.his.pages.LoginPage;
 import com.his.testComponents.BaseTest;
 import com.his.pages.HomePage;
 
-@Listeners(com.his.utils.ListenersTestNG.class)
+@Listeners(com.his.testComponents.ListenersTestNG.class)
 public class UserLoginTest extends BaseTest {
 
 	LoginPage LoginPage;
@@ -21,9 +21,11 @@ public class UserLoginTest extends BaseTest {
 	public void userlogin() throws InterruptedException {
 		LoginPage = new LoginPage(driver);
 		String ActualTitle = LoginPage.loginAction();
-		AssertJUnit.assertEquals(ActualTitle, "Home");
+		assertEquals(ActualTitle, "Home");
 
 	}
+
+	
 
 	@Test
 	public void userlogOut() throws InterruptedException {
