@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import com.his.AbstractComponents.BasePage;
 import com.his.utils.Constants;
 import com.his.utils.WaitUtils;
+import com.his.utils.log;
 
 public class LoginPage extends BasePage {
 
@@ -30,6 +31,10 @@ public class LoginPage extends BasePage {
 		Sendkeys(username, Constants.username);
 		Sendkeys(password, Constants.password);
 		click(submitBtn);
+		log.info("My Account link element found");
+		log.startTestCase(getTitle());
+		log.warn("Waring msg");
+		log.error("Error Msg");
 		String Title = getTitle();
 		return Title;
 	}

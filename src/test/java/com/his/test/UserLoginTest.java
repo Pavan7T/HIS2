@@ -9,6 +9,7 @@ import java.io.IOException;
 import org.testng.annotations.Listeners;
 import com.his.pages.LoginPage;
 import com.his.testComponents.BaseTest;
+import com.his.utils.log;
 import com.his.pages.HomePage;
 
 @Listeners(com.his.testComponents.ListenersTestNG.class)
@@ -19,13 +20,13 @@ public class UserLoginTest extends BaseTest {
 
 	@Test
 	public void userlogin() throws InterruptedException {
+		log.startTestCase("userlogin");
 		LoginPage = new LoginPage(driver);
 		String ActualTitle = LoginPage.loginAction();
 		assertEquals(ActualTitle, "Home");
+		log.endTestCase("userlogin");
 
 	}
-
-	
 
 	@Test
 	public void userlogOut() throws InterruptedException {

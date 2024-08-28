@@ -15,6 +15,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.log4testng.Logger;
+
 import com.his.utils.Constants;
 import com.his.utils.DriverFactory;
 
@@ -22,6 +24,7 @@ public class BaseTest {
 
 	public static WebDriver driver;
 	public static Properties prop;
+	//public static Logger log;
 
 	@BeforeMethod
 	public static void browserInit() {
@@ -47,6 +50,9 @@ public class BaseTest {
 
 			driver = DriverFactory.getFFDriver();
 		}
+		
+		
+		
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(Constants.url);
