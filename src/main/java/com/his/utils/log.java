@@ -8,7 +8,7 @@ public class log {
 	// Initialize Log4j logs
 
 	
-	DOMConfigurator.configure("log4j.xml");
+	//DOMConfigurator.configure("log4j.xml");
 	private static Logger Log = Logger.getLogger(log.class.getName());
 	
 

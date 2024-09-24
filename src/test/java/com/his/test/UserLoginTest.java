@@ -37,4 +37,9 @@ public class UserLoginTest extends BaseTest {
 
 	}
 
+	@Test(invocationCount = 3)
+	public void TC3() throws InterruptedException {
+		
+		System.out.println("Fullscreen operation done");
+	}
 }

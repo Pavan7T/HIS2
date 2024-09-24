@@ -29,16 +29,14 @@ public class ListenersTestNG extends BaseTest implements ITestListener {
 
 	}
 
-	public void onTestFailure(ITestResult result) {
-		try {
-			getScreenshot(result.getName());
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		System.out.println("Method failed" + result.getName());
-
-	}
+	/*
+	 * public void onTestFailure(ITestResult result) { try {
+	 * getScreenshot(result.getName()); } catch (IOException e) { // TODO
+	 * Auto-generated catch block e.printStackTrace(); }
+	 * System.out.println("Method failed" + result.getName());
+	 * 
+	 * }
+	 */
 
 	public void onTestSkipped(ITestResult result) {
 		System.out.println("Method skipped" + result.getName());

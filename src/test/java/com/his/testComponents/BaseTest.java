@@ -59,22 +59,22 @@ public class BaseTest {
 
 	}
 	
-	public String getScreenshot(String testCaseName) throws IOException
-	{
-		TakesScreenshot ts = (TakesScreenshot)driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
-		FileUtils.copyFile(source, file);
-		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
-		
-		
-	}
-	
+	/*
+	 * public String getScreenshot(String testCaseName) throws IOException {
+	 * TakesScreenshot ts = (TakesScreenshot)driver; File source =
+	 * ts.getScreenshotAs(OutputType.FILE); File file = new
+	 * File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
+	 * FileUtils.copyFile(source, file); return System.getProperty("user.dir") +
+	 * "//reports//" + testCaseName + ".png";
+	 * 
+	 * 
+	 * }
+	 */
 	
 
 	@AfterMethod
 	public static void teardown() {
-		DriverFactory.quitDriver();
+		//DriverFactory.quitDriver();
 	}
 
 	

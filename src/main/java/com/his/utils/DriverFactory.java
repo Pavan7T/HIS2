@@ -22,7 +22,7 @@ public class DriverFactory {
 
 		if (driver == null) {
 			driver = new FirefoxDriver();
-			driver.manage().window().maximize();
+			//driver.manage().window().fullscreen();
 		}
 
 		return driver;
